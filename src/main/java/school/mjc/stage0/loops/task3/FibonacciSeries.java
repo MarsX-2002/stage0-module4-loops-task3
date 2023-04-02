@@ -4,10 +4,12 @@ public class FibonacciSeries {
     public static void printFibonacci(int lastFibonacci) {
         int fibonacciFirst = 0;
         int fibonacciSecond = 1;
-        if (lastFibonacci < 1) {
+        if (lastFibonacci == 1) {
             System.out.println(fibonacciFirst);
         } else {
-            for (int i = 0; i < lastFibonacci; i++) {
+            System.out.println(fibonacciFirst);
+            System.out.println(fibonacciSecond);
+            for (int i = 2; i < lastFibonacci; i++) {
                 int temp = fibonacciSecond;
                 fibonacciSecond += fibonacciFirst;
                 fibonacciFirst = temp;
@@ -18,6 +20,6 @@ public class FibonacciSeries {
     }
 
 //    public static void main(String[] args) {
-//        printFibonacci(4);
+//        printFibonacci(19);
 //    }
 }
