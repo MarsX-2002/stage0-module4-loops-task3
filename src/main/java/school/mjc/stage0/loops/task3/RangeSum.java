@@ -17,4 +17,3 @@ public class RangeSum {
         System.out.println(Math.abs(sum));
     }
 }
-
