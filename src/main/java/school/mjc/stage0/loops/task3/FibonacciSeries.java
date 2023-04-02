@@ -1,7 +1,7 @@
 package school.mjc.stage0.loops.task3;
 
 public class FibonacciSeries {
-    public static void printFibonacci(int lastFibonacci) {
+    public void printFibonacci(int lastFibonacci) {
         int fibonacciFirst = 0;
         int fibonacciSecond = 1;
         if (lastFibonacci == 1) {
@@ -9,17 +9,14 @@ public class FibonacciSeries {
         } else {
             System.out.println(fibonacciFirst);
             System.out.println(fibonacciSecond);
-            for (int i = 2; i < lastFibonacci; i++) {
+            int i = 2;
+            while (i < lastFibonacci) {
                 int temp = fibonacciSecond;
                 fibonacciSecond += fibonacciFirst;
                 fibonacciFirst = temp;
-
                 System.out.println(fibonacciSecond);
+                i++;
             }
         }
     }
-
-//    public static void main(String[] args) {
-//        printFibonacci(19);
-//    }
 }
