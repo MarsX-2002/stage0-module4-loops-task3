@@ -10,12 +10,11 @@ public class RangeSum {
             firstBoarder = secondBoarder;
             secondBoarder = temp;
         }
-        if (firstBoarder >= 0) {
             for (int i = firstBoarder; i <= secondBoarder; i++) {
                 sum += i;
             }
-        }
-        System.out.println(sum);
+
+        System.out.println(Math.abs(sum));
     }
 }
 
